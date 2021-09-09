@@ -1,0 +1,10 @@
+table {
+    width: 100%;
+  }
+
+  #containerTable{
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+  } 

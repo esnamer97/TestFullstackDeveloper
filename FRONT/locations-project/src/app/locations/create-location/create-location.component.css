@@ -1,0 +1,22 @@
+.full-width{
+    width: 100%;
+}
+
+.top-padding{
+    padding-top: 3px;
+}
+
+.form-container{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+}
+
+.bodyCard{
+    margin-top: 5%;
+}
+
+.fields{
+    width: 100%;
+}
