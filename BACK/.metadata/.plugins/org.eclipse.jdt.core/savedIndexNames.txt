@@ -1,3 +1,6 @@
 INDEX VERSION 1.131+C:\Users\ESNAM\OneDrive\Desktop\NEXOS\TestFullstackDeveloper\BACK\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< Updated upstream
 2974634148.index
+=======
+>>>>>>> Stashed changes
 1184858146.index
