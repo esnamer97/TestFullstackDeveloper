@@ -1,0 +1,5 @@
+package com.example.locations.entity;
+
+public class LocationEntity {
+
+}
