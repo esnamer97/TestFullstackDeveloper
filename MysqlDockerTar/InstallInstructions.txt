@@ -1,0 +1,8 @@
+#1. For get de tar file you need to extract file from the
+#zip file
+#2. Then, you need to execute the next line
+##Modify the path c:\images\ for the path 
+##where is the file mysql.tar
+
+docker loan -i c:\images\mysql.tar
+
