@@ -20,7 +20,7 @@ public class LocationEntity implements Serializable {
 	private Integer id;
 	
 	private String name;
-	private String area;
+	private Integer area;
 	private Integer parent;
 	public Integer getId() {
 		return id;
@@ -34,10 +34,10 @@ public class LocationEntity implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getArea() {
+	public Integer getArea() {
 		return area;
 	}
-	public void setArea(String area) {
+	public void setArea(Integer area) {
 		this.area = area;
 	}
 	public Integer getParent() {

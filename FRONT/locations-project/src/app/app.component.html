@@ -1,6 +1,5 @@
 <nav mat-tab-nav-bar color="accent">
-  <a mat-tab-link routerLink="/dashboard" (click)="activeLink = 0" [active]="activeLink == 0">Inicio</a>
-  <a mat-tab-link routerLink="/create" (click)="activeLink = 1" [active]="activeLink == 1">Create</a>
-  <a mat-tab-link routerLink="/modify" (click)="activeLink = 2" [active]="activeLink == 2">Modify</a>
+  <a mat-tab-link routerLink="/dashboard" (click)="sharedService.globalVar = 0" [active]="sharedService.globalVar == 0">Inicio</a>
+  <a mat-tab-link routerLink="/create" (click)="sharedService.globalVar = 1" [active]="sharedService.globalVar == 1">Create</a>
 </nav>
 <router-outlet></router-outlet>

@@ -23,8 +23,12 @@ export class LocationsComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.datasource.paginator = this.paginator;
     this.locationService.getLocations().subscribe(
-      e =>  this.datasource = new MatTableDataSource<Location>(e)
+      e => { 
+        this.datasource = new MatTableDataSource<Location>(e); 
+        
+      }
     );
+
   }
 
 }
