@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LocationsComponent } from './locations/locations.component';
 import { CreateLocationComponent } from './locations/create-location/create-location.component';
-import { ModifyLocationComponent } from './locations/modify-location/modify-location.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,13 +19,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { SharedService } from './shared-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LocationsComponent,
-    CreateLocationComponent,
-    ModifyLocationComponent
+    CreateLocationComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +46,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatPaginatorModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [SharedService],
+  bootstrap: ([AppComponent])
 })
 export class AppModule { }
