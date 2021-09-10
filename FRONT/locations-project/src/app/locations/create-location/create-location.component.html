@@ -1,0 +1,36 @@
+<form [formGroup]="locationForm" class="form-container">
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>Create Location</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="bodyCard">
+          <div class="row">
+            <div class="col-md-12">
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-md-12">
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Area</mat-label>
+                <input formControlName="area" matInput type="number">
+              </mat-form-field>
+            </div>
+            <div class="col-md-12">
+              <mat-form-field class="fields" appearance="fill">
+                <mat-label>Select Parent</mat-label>
+                <mat-select formControlName="parent">
+                  <mat-option *ngFor="let loc of locations" [value]="loc">
+                    {{loc.name}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button [disabled]="!locationForm.valid" (click)="onSubmit()" color="primary">Save</button>
+        </mat-card-actions>
+      </mat-card>
+</form>
